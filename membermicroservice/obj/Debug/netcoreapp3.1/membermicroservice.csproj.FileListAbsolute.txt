@@ -1,0 +1,64 @@
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.csprojAssemblyReference.cache
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.AssemblyInfoInputs.cache
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.AssemblyInfo.cs
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.RazorTargetAssemblyInfo.cache
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\staticwebassets\membermicroservice.StaticWebAssets.Manifest.cache
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\staticwebassets\membermicroservice.StaticWebAssets.xml
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.exe
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.deps.json
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.runtimeconfig.json
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.runtimeconfig.dev.json
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.dll
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.pdb
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.dll
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.pdb
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.genruntimeconfig.cache
+E:\Final Project\membermicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.csproj.CoreCompileInputs.cache
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.MvcApplicationPartsAssemblyInfo.cache
+E:\Final Project\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.csproj.CopyComplete
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.exe
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.deps.json
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.runtimeconfig.json
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.runtimeconfig.dev.json
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\membermicroservice.pdb
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.csprojAssemblyReference.cache
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.AssemblyInfoInputs.cache
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.AssemblyInfo.cs
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.RazorTargetAssemblyInfo.cache
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.csproj.CopyComplete
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\staticwebassets\membermicroservice.StaticWebAssets.Manifest.cache
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\staticwebassets\membermicroservice.StaticWebAssets.xml
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.pdb
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.genruntimeconfig.cache
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\log4net.config
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\log4net.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.csproj.CoreCompileInputs.cache
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.MvcApplicationPartsAssemblyInfo.cs
+D:\Study\ASP.NET CORE PROJECTS\Claim Management\membermicroservice\obj\Debug\netcoreapp3.1\membermicroservice.MvcApplicationPartsAssemblyInfo.cache
