@@ -86,13 +86,13 @@ namespace claimmicroservice.Controllers
 
         // PUT api/<claimController>/5
         [HttpPut("{id}")]
-        public void Put(int id,[FromBody] memberclaim obj)//edit korle j er ekta page e nie chole jai ota thakbe na
+        public void Put(int id, [FromBody] memberclaim obj)//edit korle j er ekta page e nie chole jai ota thakbe na
         {
             _log4net.Info("claimController put called");
             string s1 = obj.claimstatus;
             List<int> ls = new List<int>();
             int p = 0;
-            int op=0;
+            int op = 0;
 
             HttpResponseMessage response = client.GetAsync(client.BaseAddress + "/policy/1/2").Result;//[100,200,300,400]]
             if (response.IsSuccessStatusCode)
@@ -100,37 +100,44 @@ namespace claimmicroservice.Controllers
                 string data = response.Content.ReadAsStringAsync().Result;
                 ls = JsonConvert.DeserializeObject<List<int>>(data);
             }
-            HttpResponseMessage response1= client.GetAsync(client.BaseAddress + "/policy/"+id).Result;//used to fetch the policyid of that particular memberid
+            HttpResponseMessage response1 = client.GetAsync(client.BaseAddress + "/policy/" + id).Result;//used to fetch the policyid of that particular memberid
             if (response1.IsSuccessStatusCode)
             {
                 string data = response1.Content.ReadAsStringAsync().Result;
-               op= Convert.ToInt32(data);               //it is giving corrcet result #policyid
+                op = Convert.ToInt32(data);               //it is giving corrcet result #policyid
                 p = JsonConvert.DeserializeObject<int>(data);//it is becoming 0 i don't know
             }
             int d = obj.benefitid;
-            HttpResponseMessage response2 = client.GetAsync(client.BaseAddress + "/policy/" + op+"/"+id+"/"+d).Result;
-            int o=0;
+            HttpResponseMessage response2 = client.GetAsync(client.BaseAddress + "/policy/" + op + "/" + id + "/" + d).Result;
+            int o = 0;
             if (response2.IsSuccessStatusCode)
             {
                 string data = response2.Content.ReadAsStringAsync().Result;
                 o = Convert.ToInt32(data);               //it is giving corrcet result #policyid
-               // p = JsonConvert.DeserializeObject<int>(data);//it is becoming 0 i don't know
+                                                         // p = JsonConvert.DeserializeObject<int>(data);//it is becoming 0 i don't know
             }
             if (obj.claimedamount > obj.billedamount)//if the bill is very less
             {
                 //  return "Rejected";
                 obj.claimstatus = "REJECTED";
             }
-            if(obj.claimedamount>o)//it checks for all the benefit ids also for benefitid even when no benefit id is selected
+            if (obj.claimedamount > o)//it checks for all the benefit ids also for benefitid even when no benefit id is selected
             {
                 obj.claimstatus = "REJECTED";
             }
-            obj.claimstatus = "ACCEPTED";
-            s1 = obj.claimstatus;
-            //memberclaimrepo ob = new memberclaimrepo();
-            //memberclaim x = new memberclaim();
-            //x = ob.getclaim(id);
-            //int mid = x.memberid;
+            else
+            {
+                obj.claimstatus = "ACCEPTED";
+            }
+
+            memberclaimrepo x = new memberclaimrepo();
+            foreach (var item in memberclaimrepo.m)
+            {
+                if (item.claimid == obj.claimid)
+                    item.claimstatus = obj.claimstatus;
+            }
+        
+            
             
 
         }
