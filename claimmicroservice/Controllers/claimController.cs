@@ -77,7 +77,7 @@ namespace claimmicroservice.Controllers
         memberclaimrepo db;
         public claimController(memberclaimrepo _db)
         {
-            db = _db;
+             db = _db;
             _log4net = log4net.LogManager.GetLogger(typeof(claimController));
             client = new HttpClient();
             client.BaseAddress = baseAddress;

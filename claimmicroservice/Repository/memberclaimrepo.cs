@@ -30,7 +30,7 @@ namespace claimmicroservice.Repository
             ob.claimstatus = "PENDING";
             m.Add(ob);
         }
-        public List<memberclaim> fetchclaimsformember(int id)//here id is the member id
+        public virtual List<memberclaim> fetchclaimsformember(int id)//here id is the member id
         {
            List<memberclaim> l = new List<memberclaim>();
             foreach(var item in m)//fetch all the claims for a particular memberid
@@ -42,7 +42,7 @@ namespace claimmicroservice.Repository
             }
             return l;
         }
-        public List<memberclaim> give()
+        public virtual List<memberclaim> give()
         {
             
             return m;

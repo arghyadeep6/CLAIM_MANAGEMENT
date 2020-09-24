@@ -3,25 +3,56 @@ using claimmicroservice.Repository;
 using claimmicroservice.Controllers;
 using claimmicroservice.Models;
 using Microsoft.AspNetCore.Mvc;
-
-
-
-
+using Moq;
+using System.Collections.Generic;
 
 namespace claimmicroserviceTesting
 {
     public class claimControllerTest
     {
+        List<memberclaim> claimList = new List<memberclaim>();
         [SetUp]
         public void Setup()
         {
+            claimList = new List<memberclaim>
+            {
+              new memberclaim()
+               {
+                memberid=1,
+                claimid=2,
+                billedamount=1200,
+                claimedamount=1000,
+                claimstatus="Pending",
+                benefitid=1
+               },
+              new memberclaim()
+              {
+                memberid=2,
+                claimid=3,
+                billedamount=1200,
+                claimedamount=1000,
+                claimstatus="Pending",
+                benefitid=2
+               },
+               new memberclaim()
+              {
+                memberid=3,
+                claimid=4,
+                billedamount=1300,
+                claimedamount=1100,
+                claimstatus="Pending",
+                benefitid=3
+               }
+
+            };
         }
 
         [Test]
         public void Test1()
         {
-            memberclaimrepo mcr = new memberclaimrepo();
-            claimController con = new claimController(mcr);
+            Mock<memberclaimrepo> mock = new Mock<memberclaimrepo>();
+            mock.Setup(p => p.give()).Returns(claimList);
+            claimController con = new claimController(mock.Object);
             var data = con.Get() as OkObjectResult;
             Assert.AreEqual(200, data.StatusCode);
 
@@ -30,9 +61,10 @@ namespace claimmicroserviceTesting
         [Test]
         public void Test2()
         {
-            memberclaimrepo cr = new memberclaimrepo();
-            claimController cont = new claimController(cr);
-            var data = cont.Get1(1) as OkObjectResult;
+            Mock<memberclaimrepo> mock = new Mock<memberclaimrepo>();
+            mock.Setup(p => p.fetchclaimsformember(1)).Returns(claimList);
+            claimController con = new claimController(mock.Object);
+            var data = con.Get1(1) as OkObjectResult;
             Assert.AreEqual(200, data.StatusCode);
 
         }
@@ -40,7 +72,8 @@ namespace claimmicroserviceTesting
         [Test]
         public void Test3()
         {
-            memberclaim mem1 = new memberclaim {
+            memberclaim mem1 = new memberclaim
+            {
                 memberid = 1,
                 claimid = 2,
                 billedamount = 1200,
@@ -48,8 +81,8 @@ namespace claimmicroserviceTesting
                 claimstatus = "Pending",
                 benefitid = 1
             };
-            memberclaimrepo acr = new memberclaimrepo();
-            claimController contr = new claimController(acr);
+            Mock<memberclaimrepo> acr = new Mock<memberclaimrepo>();
+            claimController contr = new claimController(acr.Object);
             var data = contr.Post(mem1) as OkObjectResult;
             Assert.AreEqual(200, data.StatusCode);
 
