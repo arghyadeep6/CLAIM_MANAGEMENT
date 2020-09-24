@@ -25,10 +25,22 @@ namespace membermicroservice.Controllers
         }
 
         // GET api/<billsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{mid}/{pid}")]
+        public IActionResult Get1(int mid , int pid)
         {
-            return "value";
+            memberpremiumrepo ob = new memberpremiumrepo();
+            memberpremium l = new memberpremium();
+            try
+            {
+                l = ob.getViewBills(mid, pid);
+                if (l == null)
+                    return BadRequest(l);
+                return Ok(l);
+            }
+            catch(Exception)
+            {
+                return BadRequest(l);
+            }
         }
 
 

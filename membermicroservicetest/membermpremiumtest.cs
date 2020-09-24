@@ -21,6 +21,7 @@ namespace membermicroservicetest
                  new memberpremium
                  {
                     memberid=1,
+                    policyid=1,
                     topup=1000,
                     premium=2000,
                     paiddate=DateTime.Today
@@ -28,6 +29,7 @@ namespace membermicroservicetest
                  new memberpremium
                  {
                     memberid=2,
+                    policyid=2,
                     topup=1000,
                     premium=2000,
                     paiddate=DateTime.Today
@@ -35,6 +37,7 @@ namespace membermicroservicetest
                  new memberpremium
                  {
                     memberid=3,
+                    policyid=3,
                     topup=2000,
                     premium=3000,
                     paiddate=DateTime.Today
@@ -42,6 +45,7 @@ namespace membermicroservicetest
                  new memberpremium
                  {
                     memberid=4,
+                    policyid=4,
                     topup=4000,
                     premium=5000,
                     paiddate=DateTime.Today
@@ -62,9 +66,16 @@ namespace membermicroservicetest
             Assert.AreEqual(4, result.Count());
             
 
-
-
-
+        }
+        [Test]
+        public void GetByIds()
+        {
+            Mock<memberpremiumrepo> mock = new Mock<memberpremiumrepo>();
+            mock.Setup(p => p.getViewBills(1, 1)).Returns((memberpremium)premiumList.Where(x => x.memberid == 1).Where(y => y.policyid == 1));
+            billsController controller = new billsController();
+            IActionResult data = controller.Get1(1, 1);
+            var result = data as ObjectResult;
+            Assert.AreEqual(200, result.StatusCode);
         }
     }
 }

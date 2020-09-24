@@ -8,6 +8,7 @@ namespace membermicroservice.Models
     public class memberpremium
     {
         public int memberid { get; set; }
+        public int policyid { get; set; }
         public int topup { get; set; }
         public int premium { get; set; }
         public DateTime paiddate { get; set; }
