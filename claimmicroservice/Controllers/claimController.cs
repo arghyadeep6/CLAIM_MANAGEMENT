@@ -17,8 +17,12 @@ namespace claimmicroservice.Controllers
     public class claimController : ControllerBase
     {
         readonly log4net.ILog _log4net;
-        
-        // GET: api/<claimController>
+       
+        /// <summary>
+        /// GET: api/<claimController>
+        /// </summary>
+        /// <returns>List<memberclaim></returns>
+
         [HttpGet]
         public IActionResult Get()//View Bills je by dafault index e or asbe
         {
@@ -33,9 +37,15 @@ namespace claimmicroservice.Controllers
                 return BadRequest();
             }
         }
-        // GET api/<claimController>/5
+
+        /// <summary>
+        /// GET api/<claimController>/5
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>List<memberclaim></returns>
+       
         [HttpGet("{id}")]
-        public IActionResult Get1(int id)
+        public IActionResult Get(int id)
         {
             _log4net.Info("claimController getbyId called");
             try
@@ -50,8 +60,13 @@ namespace claimmicroservice.Controllers
                 return BadRequest();
             }
         }
-       
-        // POST api/<claimController>
+
+        /// <summary>
+        /// POST api/<claimController>
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>string</returns>
+        
         [HttpPost]
         public IActionResult Post([FromBody] memberclaim obj)
         {
@@ -77,14 +92,20 @@ namespace claimmicroservice.Controllers
         memberclaimrepo db;
         public claimController(memberclaimrepo _db)
         {
-             db = _db;
+            db = _db;
             _log4net = log4net.LogManager.GetLogger(typeof(claimController));
             client = new HttpClient();
             client.BaseAddress = baseAddress;
 
         }
+       
 
-        // PUT api/<claimController>/5
+        /// <summary>
+        /// PUT api/<claimController>/5
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="obj"></param>
+        
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] memberclaim obj)//edit korle j er ekta page e nie chole jai ota thakbe na
         {

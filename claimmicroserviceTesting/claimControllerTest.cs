@@ -64,7 +64,7 @@ namespace claimmicroserviceTesting
             Mock<memberclaimrepo> mock = new Mock<memberclaimrepo>();
             mock.Setup(p => p.fetchclaimsformember(1)).Returns(claimList);
             claimController con = new claimController(mock.Object);
-            var data = con.Get1(1) as OkObjectResult;
+            var data = con.Get(1) as OkObjectResult;
             Assert.AreEqual(200, data.StatusCode);
 
         }
